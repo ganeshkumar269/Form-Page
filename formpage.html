@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Form Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>We would love your feedback :)</h1>
+	<form>
+		<div class="f" display="inline-block">
+			<label for="firstname">First Name:</label>
+			<input type="text" name="" placeholder="Your First Name" width="60px" id="firstname" autofocus="1" required>
+			<br>
+			<label for="lastname">Last Name:</label>
+			<input type="text" name="" placeholder="Your Last Name" id="lastname" required>
+			<br>
+			<label for="email">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<input type="email" name="" placeholder="Your Email" id="email" required>
+			<br>
+			<div class="gender">
+				
+				<label for="gender">Male</label>
+				<input type="radio" name="gender" id="gender" checked="1" required>
+				<label for="gender">Female</label>
+				<input type="radio" name="gender" id="gender">
+				<label for="gender">Others</label>
+				<input type="radio" name="gender" id="gender">
+			</div>
+			<label for="product">Product:</label>
+			<select id="product" required>
+				<option value="">--Select an Option--</option>
+				<option value="aws">AWS</option>
+				<option value="ecommerce">E-Commerce</option>
+				<option value="audible">Audible</option>
+				<option value="twitch">Twitch</option>
+			</select>
+			<br>
+			<label for="rating">Rating:</label>
+			<input type="number" name="rating" id="rating" max=5 min=1 required>
+			<br>
+			<label for="feedback">Your feedback:</label>
+			<br>
+			<textarea id="feedback" style="width:450px;height:130px; background: #07171E;color:white;border-color: #EAAE17" placeholder="Write your feedback here" required></textarea>
+			<br>
+			<input type="checkbox" name="checkbox" id="checkbox" required="1">
+			<label for="checkbox">I agree to the terms and conditions presented by the fellow gamer.</label>
+			<br>
+			<input type="submit" name="submit">
+		</div>
+	</form>
+</body>
+</html>
